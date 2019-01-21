@@ -36,6 +36,7 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+        alert('here');
         var ref = window.open('http://192.168.0.130:3090/desktop-authenticate2?reseller_id=305&store_id=144', '_blank', 'location=yes');
         window.open('http://192.168.0.130:3090/home', '_blank', 'location=yes');
     },
