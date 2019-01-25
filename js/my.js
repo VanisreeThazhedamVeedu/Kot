@@ -15,7 +15,7 @@
              //alert('start: ' + event.url);
              });
          ref.addEventListener('loadstop', function(event) { 
-            window.open("http://" + ip + ":3090/home", "_blank", "location=yes");
+            window.open("http://" + ip + ":3090/kitchen-display", "_blank", "location=yes");
             // alert('stop: ' + event.url); 
         });
          ref.addEventListener('loaderror', function(event) { /*alert('error: ' + event.message);*/ });
