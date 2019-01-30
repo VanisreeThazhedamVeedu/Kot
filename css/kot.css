@@ -1,0 +1,465 @@
+/*kot main page*/
+#kot-page{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #39464e !important;
+}
+  .order{
+    width: 100%;
+    border: 1px solid lightgray;
+    margin: 10px;
+    display: table;
+  }
+  .order .kot-heading {
+    padding: 7px;
+    background-image: linear-gradient(#fbfbfb,#e1e1e1);
+    font-weight: bold;
+  }
+  .kot-heading-half{
+    display: inline-block;
+    width: 50%;
+  }
+  .kot-heading-half:first-child{
+    float: left;
+  }
+  .kot-heading label{
+    font-weight: bold;
+    width: 100%;
+    text-align: left;
+  }
+  ul#orders-list{
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+  }
+  ul#orders-list li{
+    display: inline-block;
+    padding: 10px;
+  }
+  #items-list{
+    width:100%;
+    height: 250px;
+    overflow-y: auto;
+    background-color: #fbfbfb;
+  }
+  .kot-order-table{
+    width: 100%;
+  }
+  .kot-order-table td, th{
+    text-align: center;
+    padding: 8px;
+  }
+  .kot-order-table td button{
+      background-color: cornflowerblue;
+      border: none;
+      padding: 5px 8px;
+      color: white;
+      border-radius: 18px;
+  }
+  .kot-order-table td button.ready{
+    color: cornflowerblue;
+    background-color: white;
+  }
+  
+  .kot-order-table label{
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: left;
+  }
+  .kot-order-table th{
+    border: 1px solid #e1e1e1;
+    padding: 4px;
+    background-color: #eee;
+    width:90%;
+  }
+  .kot-order-table tr{
+    border: 1px solid #e1e1e1;
+    
+  }
+  .clear-btn-green{
+    float:right;
+    cursor: pointer;
+    padding-left: 10px;
+  }
+  
+  .kot-page-title{
+    width: 100%;
+    position: fixed;
+    background-color: #39464e;
+    margin-top: -40px;
+    z-index: 100;
+    border: 1px solid gray;
+  }
+  
+  .kot-page-title h2{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-top: 15px;
+  }
+  .kot-page-title div a img{
+    width: 15px;
+  }
+  .list-heading{
+    height: 45px;
+    margin-top: 60px;
+    position: fixed;
+    width: 100%;
+  }
+  .kot-settingRow select{
+    padding: 3px;
+  }
+  .kot-settingRow input{
+    background-color: transparent;
+    border: 1px solid gray;
+    width: 50px;
+    padding-left: 5px;
+  }
+  .kot-settings-btn{
+    float: right;
+    margin-right: 15px;
+    color: white;
+    font-size: 30px;
+    margin-top: -7px;
+  }
+  .priority-1-header{
+    background-image: linear-gradient(#cc0000, #ff3333) !important;
+    color: #e1e1e1;
+  }
+  .priority-1-border{
+    border : 3px solid #cc0000 !important;
+  }
+  .priority-2-header{
+    background-image: linear-gradient(#e68a00,#ffc266) !important;
+    color: #e1e1e1;
+  }
+  .priority-2-border{
+    border : 3px solid #e68a00 !important;
+  }
+  .priority-3-header{
+    background-image: linear-gradient(#005c99, #33adff) !important;
+    color: #e1e1e1;
+  }
+  .priority-3-border{
+    border : 3px solid #005c99 !important;
+  }
+  .kot-li-large{
+    width: 40%;
+    font-size: 20px;
+  }
+  .kot-li-medium{
+    width: 30%;
+    font-size: 15px;
+  }
+  .kot-li-small{
+    width: 20%;
+    font-size: 12px;
+  }
+  .kot-table-large th{
+    font-size: 14px;
+  }
+  .kot-table-large td{
+    font-size: 18px;
+  }
+  .kot-table-medium th{
+    font-size: 12px;
+  }
+  .kot-table-medium td{
+    font-size: 15px;
+  }
+  .kot-table-small th{
+    font-size: 10px;
+  }
+  .kot-table-small td{
+    font-size: 13px;
+  }
+  .kot-timer{
+    float: right;
+    padding-left: 4px;
+  }
+  .kot-timer+i{
+    float: right;
+    margin-top: 3px;
+  }
+  
+  
+/*Settings page*/
+     .kot-settingRow{
+      width:100%;
+      border-bottom: 1px solid gray;
+      padding: 15px;
+      font-size: 20px;
+      text-align: left;
+      color: #e1e1e1;
+     }
+     .kot-settingRow > label{
+      width:38%;
+      color:#e1e1e1;
+      font-size: 23px;
+     }
+     .kot-settingRow select{
+      width: 30%;
+      background-color: transparent;
+      color: #e1e1e1;
+      padding: 5px;
+     }
+     .kot-settingRow select option{
+       background-color: #39464e;
+       color: #e1e1e1;
+     }
+    /*time range picker css*/
+  .kot-settingRow p {
+      font-family:"Arial", sans-serif;
+      font-size:16px;
+      color:#e1e1e1;
+  }
+  .ui-slider-horizontal {
+      height: 8px;
+      background: #D7D7D7;
+      border: 1px solid #BABABA;
+      box-shadow: 0 1px 0 #FFF, 0 1px 0 #CFCFCF inset;
+      clear: both;
+      margin: 8px 0;
+      -webkit-border-radius: 6px;
+      -moz-border-radius: 6px;
+      -ms-border-radius: 6px;
+      -o-border-radius: 6px;
+      border-radius: 6px;
+  }
+  .ui-slider {
+      position: relative;
+      text-align: left;
+  }
+  .ui-slider-horizontal .ui-slider-range {
+      top: -1px;
+      height: 100%;
+  }
+  .ui-slider .ui-slider-range {
+      position: absolute;
+      z-index: 1;
+      height: 8px;
+      font-size: .7em;
+      display: block;
+      border: 1px solid #5BA8E1;
+      box-shadow: 0 1px 0 #AAD6F6 inset;
+      -moz-border-radius: 6px;
+      -webkit-border-radius: 6px;
+      -khtml-border-radius: 6px;
+      border-radius: 6px;
+      background: #81B8F3;
+      background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgi…pZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+      background-size: 100%;
+      background-image: -webkit-gradient(linear, 50% 0, 50% 100%, color-stop(0%, #A0D4F5), color-stop(100%, #81B8F3));
+      background-image: -webkit-linear-gradient(top, #A0D4F5, #81B8F3);
+      background-image: -moz-linear-gradient(top, #A0D4F5, #81B8F3);
+      background-image: -o-linear-gradient(top, #A0D4F5, #81B8F3);
+      background-image: linear-gradient(top, #A0D4F5, #81B8F3);
+  }
+  .ui-slider .ui-slider-handle {
+      border-radius: 50%;
+      background: #F9FBFA;
+      background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgi…pZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+      background-size: 100%;
+      background-image: -webkit-gradient(linear, 50% 0, 50% 100%, color-stop(0%, #C7CED6), color-stop(100%, #F9FBFA));
+      background-image: -webkit-linear-gradient(top, #C7CED6, #F9FBFA);
+      background-image: -moz-linear-gradient(top, #C7CED6, #F9FBFA);
+      background-image: -o-linear-gradient(top, #C7CED6, #F9FBFA);
+      background-image: linear-gradient(top, #C7CED6, #F9FBFA);
+      width: 22px;
+      height: 22px;
+      -webkit-box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.6), 0 -1px 0 1px rgba(0, 0, 0, 0.15) inset, 0 1px 0 1px rgba(255, 255, 255, 0.9) inset;
+      -moz-box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.6), 0 -1px 0 1px rgba(0, 0, 0, 0.15) inset, 0 1px 0 1px rgba(255, 255, 255, 0.9) inset;
+      box-shadow: 0 2px 3px -1px rgba(0, 0, 0, 0.6), 0 -1px 0 1px rgba(0, 0, 0, 0.15) inset, 0 1px 0 1px rgba(255, 255, 255, 0.9) inset;
+      -webkit-transition: box-shadow .3s;
+      -moz-transition: box-shadow .3s;
+      -o-transition: box-shadow .3s;
+      transition: box-shadow .3s;
+  }
+  .ui-slider .ui-slider-handle {
+      position: absolute;
+      z-index: 2;
+      width: 22px;
+      height: 22px;
+      cursor: default;
+      border: none;
+      cursor: pointer;
+  }
+  .ui-slider .ui-slider-handle:after {
+      content:"";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      top: 50%;
+      margin-top: -4px;
+      left: 50%;
+      margin-left: -4px;
+      background: #30A2D2;
+      -webkit-box-shadow: 0 1px 1px 1px rgba(22, 73, 163, 0.7) inset, 0 1px 0 0 #FFF;
+      -moz-box-shadow: 0 1px 1px 1px rgba(22, 73, 163, 0.7) inset, 0 1px 0 0 white;
+      box-shadow: 0 1px 1px 1px rgba(22, 73, 163, 0.7) inset, 0 1px 0 0 #FFF;
+  }
+  .ui-slider-horizontal .ui-slider-handle {
+      top: -.5em;
+      margin-left: -.6em;
+  }
+  .ui-slider a:focus {
+      outline:none;
+  }
+  
+  #slider-range {
+    width: 85%;
+    margin: 0 3px;
+    display: inline-block;
+  }
+  #time-range {
+    margin-top: 25px;
+  }
+  .time-range-text{
+    color: #e1e1e1;
+    padding-left: 0 !important;
+    display: inline-block;
+  }
+  .time-range-text label{
+    font-size: 23px;
+  }
+  /*time range picker css end*/
+  #save-btn{
+      float: right;
+      background-color: transparent;
+      color: #e1e1e1;
+      padding: 5px;
+      width: 90px;
+      border-radius: 7px;
+      margin-top: 30px;
+      font-weight: bold;
+      font-size: 20px;
+  }
+  #save-btn:hover{
+    background-color: white;
+    color: #39464e;
+  }
+
+  /*media query*/
+  
+ /* @media screen and (min-width:480px) {
+    .kot-li-small{
+      width:30%;
+      font-size: 15px;
+    }
+    .kot-li-medium{
+      width:40%;
+      font-size: 15px;
+    }
+    .kot-li-large{
+      width:47%;
+      font-size: 20px;
+    }
+    
+} */
+@media only screen and (orientation: portrait) {
+  .kot-settingRow {
+      padding: 35px;
+      font-size: 35px;
+    
+  }
+  
+  .kot-settingRow > label{
+    font-size: 33px;
+  }
+  .kot-settingRow select{
+    width: 60%;
+  }
+  .kot-settingRow input{
+    width:80px;
+  }
+  .kot-settingRow p{
+    font-size: 26px;
+  }
+  #save-btn{
+    width: 200px;
+    font-size: 40px;
+  }
+  .kot-page-title h2{
+    font-size: 40px !important;
+  }
+  .kot-page-title{
+    padding: 15px;
+  }
+  .kot-settings-btn{
+    font-size: 50px;
+  }
+  #contents{
+    margin-top: 50px;
+  }
+  .kot-li-small{
+    width:30%;
+    font-size: 18px;
+  }
+  .kot-li-medium{
+    width:45%;
+    font-size: 22px;
+  }
+  .kot-li-large{
+    width:70%;
+    font-size: 25px;
+  }
+  
+  .kot-li-large label{
+    font-size: 25px;
+  }
+  .kot-li-medium label{
+    font-size: 22px;
+  }
+  .kot-table-large td, .kot-table-large th{
+    font-size: 25px;
+  }
+  .kot-table-medium th, .kot-table-medium td{
+    font-size: 17px;
+  }
+ 
+  .kot-table-large td button{
+    font-size: 25px;
+  }
+  #items-list{
+    height: 350px;
+  }
+  .kot-table-medium td button{
+    font-size: 20px;
+  }
+  .time-range-text{
+    width: 100%;
+  }
+ 
+}
+
+@media only screen and (orientation: landscape) {
+  .kot-settingRow select{
+    width: 60%;
+  }
+  .kot-li-small{
+    width: 28%;
+  }
+  .kot-li-medium{
+    width: 40%;
+    font-size: 17px;
+  }
+  .kot-table-medium th{
+    font-size: 14px;
+  }
+  .kot-table-medium td{
+    font-size: 17px;
+  }
+  .kot-li-large{
+    width: 46%;
+    font-size: 23px;
+  }
+  .kot-table-large th{
+    font-size: 16px;
+  }
+  .kot-settings-btn{
+    margin-top: 1px;
+  }
+}
+
+  
+  
