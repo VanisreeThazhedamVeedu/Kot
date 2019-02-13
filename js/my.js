@@ -18,7 +18,7 @@
              });
          ref.addEventListener('loadstop', function(event) { 
             window.open("http://" + ip + ":3090/kitchen-display", "_blank", "location=yes");
-            ref.insertCSS({file: "../css/kot.css"});
+           // ref.insertCSS({file: "../css/kot.css"});
             // alert('stop: ' + event.url); 
         });
          ref.addEventListener('loaderror', function(event) { /*alert('error: ' + event.message);*/ });
