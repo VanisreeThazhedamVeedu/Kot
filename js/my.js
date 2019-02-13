@@ -6,11 +6,13 @@
     function onDeviceReady() {
         $(document).on('click', '#go', function(){
     var ip =  $("#text-basic").val();
+    var reseller_id = $('#reseller_id').val();
+    var store_id = $('#store_id').val();
     //alert(ip);
      window.open = cordova.InAppBrowser.open;
        //  var ref = window.open("http://www."+website, '_blank', 'location=yes');
       // var ref = window.open("http://192.168.0.130:3090/desktop-authenticate2?reseller_id=305&store_id=144", '_blank', 'location=yes');
-       var ref = window.open("http://" + ip + ":3090/desktop-authenticate2?reseller_id=451&store_id=364", '_blank', 'location=yes');
+       var ref = window.open("http://" + ip + ":3090/desktop-authenticate2?reseller_id=" + reseller_id + "store_id=" + store_id, '_blank', 'location=yes');
          ref.addEventListener('loadstart', function(event) { 
              //alert('start: ' + event.url);
              });
